@@ -25,42 +25,42 @@
   </a>
 </p>
 
-<p align="center">基于本地知识库和 ChatYuan 的轻量级对话系统</p>
+<p align="center">A lightweight dialogue system based on local knowledge base and ChatYuan</p>
 
 
 <br>
 
-## 如何运行
-首先下载本仓库：
+## how to run
+First download this repository:
 ```bash
 git clone https://github.com/tiansztiansz/langchain-chatyuan.git
 ```
-接着切换到项目目录：
+Then switch to the project directory:
 ```bash
 cd langchain-chatyuan
 ```
-安装依赖：
+Installation dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-请注意，本项目还需要 [nltk_data](http://www.nltk.org/nltk_data/) 的 punkt 包，请下载并解压到 `\\wsl.localhost\Ubuntu\home\tiansz\nltk_data\tokenizers\punkt` 类似的路径。
+Please note that this project also requires the punkt package of [nltk_data](http://www.nltk.org/nltk_data/), please download and unzip it to `\\wsl.localhost\Ubuntu\home\tiansz\nltk_data\tokenizers\punkt` similar path.
 
-运行主程序：
+Run the main program:
 ```bash
 python3 main.py
 ```
-该程序将从本地的 `docs/FAQ.md` 文件中寻找问题 `本项目能否在colab中运行` 的【答案】和【出处】
+The program will look for the 【Answer】 and 【Source】 of the question `Can this project run in colab` from the local `docs/FAQ.md` file
 
 
 
 <br>
 
-## 示例
-问题：
+## example
+question:
 ```
 本项目能否在colab中运行
 ```
-回答：
+answer:
 ```
 可以尝试使用 chatglm-6b-int4 模型在 colab 中运行。需要注意的是，如需在 colab 中运行 Web UI，需将webui.py中demo.queue(concurrency_count=3).launch(server_name='0.0.0.0', share=False, inbrowser=False)中参数share设置为True。
 
@@ -69,5 +69,5 @@ python3 main.py
 
 <br>
 
-## 参考资料
+## references
 [langchain-ChatGLM](https://github.com/imClumsyPanda/langchain-ChatGLM)
